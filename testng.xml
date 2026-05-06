@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Wuzzuf Automation Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.wuzzuf.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Wuzzuf Tests">
+        <classes>
+            <class name="com.wuzzuf.testcases.WuzzufRegisterTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufPersonalInfoTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufEducationTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufExperienceTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufExpertiseTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufCareerInterestTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufJobSearchTest"/>
+            <class name="com.wuzzuf.testcases.WuzzufAccountSettingsTest"/>
+        </classes>
+    </test>
+</suite>
